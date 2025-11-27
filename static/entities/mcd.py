@@ -1,4 +1,4 @@
-from prime import is_prime
+from static.entities.prime import is_prime
 
 def factores(n):
     factores= {}
