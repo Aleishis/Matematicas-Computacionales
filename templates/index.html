@@ -1,20 +1,38 @@
 {% include 'header.html' %}
 
 <div>
+    <form method="post" action="/maximo_comun_divisor"></form>
         <section class="contenedor">
 
-        <form method="post" action="/maximo_comun_divisor">
+            <div class="c4">
 
-            <div class="c5">
-                <section ></section>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default"></span>
+                <input name="numero1" placeholder="Escribelo aqui..." type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+                
+            <div class="input-group mb-3">
+                <span class="input-group-text" ></span>
+                <input name="numero2" placeholder="Escribelo aqui..." type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+            
+
+
+                
             </div>
 
-            <div class="c1">
-                <section></section>
+            <div class="c2">
+                <button class="btn btn-primary" type="submit">Euclides</button> 
+                <br><br>
+                <button class="btn btn-secondary" type="submit">MCD</button>
+                <br><br>
+                <button class="btn btn-success" type="submit">MCM</button>
+                <br><br>
             </div>
 
         
-        </form>
+        
         </section>
+    </form>
 
 {% include 'footer.html' %}

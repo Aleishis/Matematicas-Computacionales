@@ -7,19 +7,29 @@ header{
     text-align: center;
 }
 
-#contenedor{
-    background: white;
-    margin: 11% auto;
-    padding: 15px;
-    border-radius: 12px;
-    color: black;
-    width: 50%;
-    text-align: center;
-    box-shadow: 11px 20px 12px 1px #000000;
-    border: solid 5px darkblue;
-}
 
 .contenedor{
+            text-align: center;
+            margin: 0 auto;
+            width: 1200px;
+            display: grid;
+             /*Indica que hya 3 columnas, y se puede indicar manualmente el porcentaje que va a ocupar de pantalla*/
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /*fr son fracciones*/
+            border: solid darkblue;
+            border-radius: 12px;
+        }
+
+        .contenedor >div{ /*El > solo afecta a los que estar directamente dentro de contenedor, si hay mas divs dentro de los divs, no se ven afectados*/
+            background: powderblue;
+            font-size: 15px;
+            font-weight: 900;
+            color: darkblue;
+            margin: 5px;
+            padding: 20px;
+            
+        }
+
+#contenedor{
             display: grid;
             grid-template-columns: 50% 150px auto;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
