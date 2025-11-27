@@ -4,4 +4,93 @@ header{
     padding: 30px;
     font-weight: 900;
     background-color: darkblue;
+    text-align: center;
+}
+
+#contenedor{
+    background: white;
+    margin: 11% auto;
+    padding: 15px;
+    border-radius: 12px;
+    color: black;
+    width: 50%;
+    text-align: center;
+    box-shadow: 11px 20px 12px 1px #000000;
+    border: solid 5px darkblue;
+}
+
+.contenedor{
+            display: grid;
+            grid-template-columns: 50% 150px auto;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            /*  grid-template-columns: 500% 20% 20% 20% 20%;*/
+           
+            max-width:1200px;
+            margin: 0 auto;
+            padding: 10px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background: whitesmoke;
+            border: solid 5px darkblue;
+             
+        }
+
+        .c1{  grid-column:  span 1;  }
+        .c2{  grid-column:  span 2;  }
+        .c3{  grid-column:  span 3;  }
+        .c4{  grid-column:  span 4;  }
+        .c5{  grid-column:  span 5;  }
+        .c6{  grid-column:  span 6;  }
+
+header a{
+    font-weight: bold;
+    color: powderblue;
+    font-size: 200%;
+    text-decoration: none;
+    margin: 5px 10px;
+}
+
+footer{
+    
+    background-color: hotpink;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-size: 200%;
+    font-weight: 800;
+}
+
+#contenedor input{
+    height: 40px;
+    width: 40%;
+    color: black;
+    padding: 2px;
+    margin: 5px;
+
+}
+
+#contenedor button{
+
+    height: 40px;
+    width: 40%;
+    color: powderblue;
+    background-color: darkblue;
+    font-weight: 700;
+    font-size: 18px;
+
+}
+
+#contenedor button:hover{
+    cursor: pointer;
+    color: darkblue;
+    background-color: powderblue;
+}
+
+#contenedor p{
+    font-size: 18px;
+    font-weight: bold;
+    color: darkgreen;
+    margin: 7px;
+    text-align: center;
+
 }
